@@ -1,0 +1,31 @@
+# OSX
+.DS_Store
+
+# IntelliJ
+.idea
+*.iml
+
+# node.js
+.npmrc
+node_modules/
+npm-debug.log
+yarn-error.log
+lerna-debug.log
+
+# Yarn
+.yarn/*
+
+# Env files
+.env.local
+.env.*.local
+
+# testing
+coverage
+
+# production
+build
+dist
+lib
+
+# TypeScript incremental compilation cache
+*.tsbuildinfo
