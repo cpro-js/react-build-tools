@@ -1886,7 +1886,6 @@ __metadata:
     lodash: 4.17.21
     react-dev-utils: 11.0.4
     react-scripts: ^4.0.3
-    resolve-from: 5.0.0
     ts-jest: ^27.0.5
     tsup: 4.12.5
     typescript: 4.1.3
