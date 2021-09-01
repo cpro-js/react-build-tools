@@ -2,11 +2,7 @@
   "name": "@cpro-js/craco-plugin-ui5-webcomponents",
   "version": "0.1.0-alpha.0",
   "publishConfig": {
-    "access": "public",
-    "files": [
-      "*.md",
-      "dist"
-    ]
+    "access": "public"
   },
   "license": "MIT",
   "main": "dist/craco-plugin-ui5-webcomponents.js",
@@ -15,6 +11,10 @@
     "prepublish": "tsup-node --format cjs",
     "test": "jest"
   },
+  "files": [
+    "*.md",
+    "dist"
+  ],
   "peerDependencies": {
     "@craco/craco": "^6.1.2",
     "react-scripts": "^4.0.1"
