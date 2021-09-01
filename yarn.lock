@@ -1855,6 +1855,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cpro-js/craco-plugin-ui5-webcomponents@workspace:packages/craco-plugin-ui5-webcomponents":
+  version: 0.0.0-use.local
+  resolution: "@cpro-js/craco-plugin-ui5-webcomponents@workspace:packages/craco-plugin-ui5-webcomponents"
+  dependencies:
+    "@types/jest": ^27.0.1
+    "@types/webpack": 4.41.30
+    jest: ^27.1.0
+    resolve-from: 5.0.0
+    ts-jest: ^27.0.5
+    tsup: 4.12.5
+    typescript: 4.1.3
+  peerDependencies:
+    "@craco/craco": ^6.1.2
+    react-scripts: ^4.0.1
+  languageName: unknown
+  linkType: soft
+
 "@cpro-js/craco-plugin-ui5@workspace:packages/craco-plugin-ui5":
   version: 0.0.0-use.local
   resolution: "@cpro-js/craco-plugin-ui5@workspace:packages/craco-plugin-ui5"

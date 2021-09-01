@@ -1,0 +1,33 @@
+{
+  "name": "@cpro-js/craco-plugin-ui5-webcomponents",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public",
+    "files": [
+      "*.md",
+      "dist"
+    ]
+  },
+  "license": "MIT",
+  "main": "dist/craco-plugin-ui5-webcomponents.js",
+  "scripts": {
+    "build": "tsup-node --format cjs",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "@craco/craco": "^6.1.2",
+    "react-scripts": "^4.0.1"
+  },
+  "dependencies": {
+    "resolve-from": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/webpack": "4.41.30",
+    "jest": "^27.1.0",
+    "ts-jest": "^27.0.5",
+    "tsup": "4.12.5",
+    "typescript": "4.1.3"
+  },
+  "typings": "dist/craco-plugin-ui5-webcomponents.d.ts"
+}
