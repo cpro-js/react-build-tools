@@ -1,4 +1,4 @@
-# Craco UI5 Plugin
+# Craco Plugin UI5 Webcomponents
 
 This is a [craco](https://github.com/gsoft-inc/craco) plugin that improves the bundling
 of [ui5-webcomponents](https://github.com/SAP/ui5-webcomponents)
@@ -21,7 +21,7 @@ _Note_: This plugin is only applied for production builds.
    the [`craco` Installation Instructions](https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md#installation)
    to install the `craco` package with modified scripts in your `package.json`.
 2. Create a `craco.config.js` file.
-3. Install `@cpro-js/craco-plugin-ui5`:
+3. Install `@cpro-js/craco-plugin-ui5-webcomponents`:
 
 ```bash
 yarn add --dev @cpro-js/craco-plugin-ui5-webcomponents
