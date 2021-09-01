@@ -65,7 +65,7 @@ export class UI5ComponentPlugin {
       }
 
       compiler.options.entry = [
-        "@cpro-js/craco-plugin-ui5-spa/setup-webpack-env.js",
+        "@cpro-js/craco-plugin-ui5/setup-webpack-env.js",
         ...(Array.isArray(compiler.options.entry)
           ? compiler.options.entry
           : [compiler.options.entry]),
@@ -80,7 +80,7 @@ export class UI5ComponentPlugin {
       compiler.options.entry = {
         ...compiler.options.entry,
         [this.options.ui5ChunkName]: [
-          "@cpro-js/craco-plugin-ui5-spa/setup-webpack-env.js",
+          "@cpro-js/craco-plugin-ui5/setup-webpack-env.js",
           ...((Array.isArray(compiler.options.entry[this.options.ui5ChunkName])
             ? compiler.options.entry[this.options.ui5ChunkName]
             : [
@@ -97,10 +97,10 @@ export class UI5ComponentPlugin {
 
     // add ui5 runtime bridge, which will be called from Component.js
     const plugin = new VirtualModulesPlugin({
-      "node_modules/@cpro-js/craco-plugin-ui5-spa/runtime.js": buildRuntime(
+      "node_modules/@cpro-js/craco-plugin-ui5/runtime.js": buildRuntime(
         this.options.appId
       ),
-      "node_modules/@cpro-js/craco-plugin-ui5-spa/setup-webpack-env.js":
+      "node_modules/@cpro-js/craco-plugin-ui5/setup-webpack-env.js":
         buildSetupWebpackEnv(this.options.appId),
     });
     plugin.apply(compiler);
