@@ -40,6 +40,7 @@
   },
   "packageManager": "yarn@3.0.1",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "example/*"
   ]
 }
