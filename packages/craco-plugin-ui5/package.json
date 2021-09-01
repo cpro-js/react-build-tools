@@ -5,6 +5,7 @@
     "access": "public",
     "files": [
       "*.md",
+      "*.d.ts",
       "template",
       "dist"
     ]
