@@ -12,6 +12,7 @@
   "main": "dist/craco-plugin-ui5-webcomponents.js",
   "scripts": {
     "build": "tsup-node --format cjs",
+    "prepublish": "tsup-node --format cjs",
     "test": "jest"
   },
   "peerDependencies": {
