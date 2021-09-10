@@ -7,7 +7,8 @@
     "postversion": "lerna publish from-git",
     "release": "env-cmd -f .env.local --no-override lerna version",
     "test": "yarn workspaces foreach -pt run test",
-    "test:ci": "yarn workspaces foreach -pt run test"
+    "test:ci": "yarn workspaces foreach -pt run test",
+    "version": "yarn install && git add yarn.lock"
   },
   "dependencies": {
     "@commitlint/cli": "^13.1.0",
