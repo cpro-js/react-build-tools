@@ -47,6 +47,7 @@ sap.ui.define(
         var oLaunchpadContext = this.getLaunchpadContext();
 
         var eventBus = this.eventBus;
+        var that = this;
 
         this.reactUnmount = window["UI5_RUNNER@<%= appId %>"].start({
           rootNode: oEl,
@@ -73,6 +74,9 @@ sap.ui.define(
                 cb(data.locale);
               }
             );
+          },
+          resolveUri: function (sUri) {
+            return that.getManifestObject().resolveUri(sUri);
           },
         });
 
