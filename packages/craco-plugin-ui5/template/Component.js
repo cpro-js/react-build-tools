@@ -75,8 +75,8 @@ sap.ui.define(
               }
             );
           },
-          resolveUrl: function (relativePath) {
-            return that.getManifestObject().resolveUri(relativePath);
+          resolveUri: function (sUri) {
+            return that.getManifestObject().resolveUri(sUri);
           },
         });
 

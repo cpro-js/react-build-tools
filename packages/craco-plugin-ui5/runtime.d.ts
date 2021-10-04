@@ -116,7 +116,7 @@ export interface CustomAppOptions {
    * Pass the relative path of your AJAX call and get a fully qualified URL back which works in all environments (local development, standalone, launchpad, etc.).
    * {@see https://answers.sap.com/questions/13352539/calling-service-using-ajax-in-fiori-elements-exten.html}
    */
-  resolveUrl(path: string): string;
+  resolveUri(path: string): string;
 }
 
 export function registerCustomApp(
