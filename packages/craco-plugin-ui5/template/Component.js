@@ -165,6 +165,11 @@ sap.ui.define(
               });
             });
           },
+          setRelatedApps: function (aRelatedApps) {
+            return that.getService("ShellUIService").then(function (service) {
+              service.setRelatedApps(aRelatedApps);
+            });
+          },
           isInitialNavigation: function () {
             return sap.ushell.Container.getServiceAsync(
               "CrossApplicationNavigation"

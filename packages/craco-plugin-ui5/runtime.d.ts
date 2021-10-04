@@ -43,7 +43,31 @@ export interface CustomAppOptions {
          */
         icon?: string;
         /**
-         * Launchpad Intent with pattern #{emanticObject-action?start-param&/app-route?app-param
+         * Launchpad Intent with pattern #{semanticObject-action?start-param&/app-route?app-param
+         */
+        intent: string;
+      }>
+    ): Promise<void>;
+    /**
+     * Displays the given related apps in the shell header.
+     * @param relatedApps
+     */
+    setRelatedApps(
+      relatedApps: Array<{
+        /**
+         * Title to show
+         */
+        title: string;
+        /**
+         * Description to show
+         */
+        subtitle?: string;
+        /**
+         * Icon to show
+         */
+        icon?: string;
+        /**
+         * Launchpad Intent with pattern #{semanticObject-action?start-param&/app-route?app-param
          */
         intent: string;
       }>
