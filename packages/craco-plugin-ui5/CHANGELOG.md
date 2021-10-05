@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/cpro-js/react-build-tools/compare/@cpro-js/craco-plugin-ui5@0.1.0...@cpro-js/craco-plugin-ui5@0.2.0) (2021-10-05)
+
+### Features
+
+- **craco-plugin-ui5:** displays the given related apps in the shell header ([#11](https://github.com/cpro-js/react-build-tools/issues/11)) ([b64e7cc](https://github.com/cpro-js/react-build-tools/commit/b64e7ccb7cafef5c54e021515541603ee690d278))
+- **craco-plugin-ui5:** resolve ws path as fully qualified url ([#12](https://github.com/cpro-js/react-build-tools/issues/12)) ([5949959](https://github.com/cpro-js/react-build-tools/commit/5949959ebfd9b0c562ca3c9ce3bdc8698fd512dc))
+
 # [0.1.0](https://github.com/cpro-js/react-build-tools/compare/@cpro-js/craco-plugin-ui5@0.1.0-alpha.0...@cpro-js/craco-plugin-ui5@0.1.0) (2021-09-01)
 
 ### Bug Fixes
