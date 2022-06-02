@@ -8,5 +8,5 @@ export const tsup: Options = {
   dts: true,
   outDir: "dist",
   target: "node12",
-  entryPoints: ["src/index.ts", "src/craco.js"],
+  entryPoints: ["src/index.ts", "src/run-craco.js"],
 };
