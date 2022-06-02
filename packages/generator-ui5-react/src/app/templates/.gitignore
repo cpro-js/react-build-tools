@@ -1,0 +1,48 @@
+# OSX
+.DS_Store
+
+# IntelliJ
+.idea
+*.iml
+
+# Emacs
+*~
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# node.js
+.npmrc
+node_modules/
+npm-debug.log
+yarn-error.log
+lerna-debug.log
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+# TODO - not now, reconsider when production ready
+# !.yarn/cache
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# build folders
+build
+dist
+lib
+gen
+target
+_out
+coverage
+
+# TypeScript incremental compilation cache
+*.tsbuildinfo

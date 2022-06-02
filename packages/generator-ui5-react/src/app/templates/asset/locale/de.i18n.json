@@ -1,0 +1,7 @@
+{
+  "test_one": "Eine Test Nachricht",
+  "test_other": "{{count}} Test Nachrichten",
+  "customer": {
+    "id": "Kundennummer"
+  }
+}

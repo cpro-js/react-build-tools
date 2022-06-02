@@ -1,0 +1,7 @@
+{
+  "test_one": "Test Message",
+  "test_other": "Test Messages",
+  "customer": {
+    "id": "Customer No."
+  }
+}
