@@ -1,4 +1,5 @@
 import { Container, I18nService, createI18nModuleRegistry } from "@cpro-js/react-core";
+import { createNotificationRegistry } from "@cpro-js/react-ui5-notification";
 
 import { createI18nConfig } from "./i18n.config";
 
@@ -9,21 +10,20 @@ import { createI18nConfig } from "./i18n.config";
  * @param options
  */
 export const createContainer = async (options: {
-  locale?: string;
+  locale: string;
   resolveUri: (path: string) => string;
 }): Promise<Container> => {
   // the Dependency Injection container
   const container = new Container();
 
-  await container.loadAsync(async () => {
-    // initialize I18nService
-    await createI18nModuleRegistry(createI18nConfig(options.locale));
+  // initialize I18nService
+  await container.loadAsync(createI18nModuleRegistry(createI18nConfig(options.locale)));
+  // initialize NotificationService
+  await container.loadAsync(createNotificationRegistry());
 
-    // const i18nService = container.get(I18nService);
-    // const odataConfig = createODataConfig(i18nService.getLanguage(), options.resolveUri);
-
-    // container.bindConstant(ODataService, new ODataService(finalODataConfig, "price-agreement"));
-  });
+  // const i18nService = container.get(I18nService);
+  // const odataConfig = createODataConfig(i18nService.getLanguage(), options.resolveUri);
+  // container.bindConstant(ODataService, new ODataService(finalODataConfig, "price-agreement"));
 
   return container;
 };
