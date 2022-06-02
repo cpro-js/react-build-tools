@@ -3185,7 +3185,7 @@ __metadata:
     ui5-nwabap-deployer-cli: ^2.2.0
     webpack-bundle-analyzer: ^4.5.0
   bin:
-    craco: ./dist/craco.js
+    urb: ./dist/run-craco.js
   languageName: unknown
   linkType: soft
 
