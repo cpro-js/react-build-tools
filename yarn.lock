@@ -3077,7 +3077,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cpro-js/craco-plugin-ui5-webcomponents@^0.1.0, @cpro-js/craco-plugin-ui5-webcomponents@workspace:packages/craco-plugin-ui5-webcomponents":
+"@cpro-js/craco-plugin-ui5-webcomponents@^0.2.0, @cpro-js/craco-plugin-ui5-webcomponents@workspace:packages/craco-plugin-ui5-webcomponents":
   version: 0.0.0-use.local
   resolution: "@cpro-js/craco-plugin-ui5-webcomponents@workspace:packages/craco-plugin-ui5-webcomponents"
   dependencies:
@@ -3094,7 +3094,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cpro-js/craco-plugin-ui5@^0.2.0, @cpro-js/craco-plugin-ui5@workspace:packages/craco-plugin-ui5":
+"@cpro-js/craco-plugin-ui5@^0.3.0, @cpro-js/craco-plugin-ui5@workspace:packages/craco-plugin-ui5":
   version: 0.0.0-use.local
   resolution: "@cpro-js/craco-plugin-ui5@workspace:packages/craco-plugin-ui5"
   dependencies:
@@ -3122,7 +3122,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@cpro-js/example-react-ui5@workspace:example/react-ui5"
   dependencies:
-    "@cpro-js/ui5-react-build": "*"
+    "@cpro-js/ui5-react-build": ^0.3.0
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
@@ -3154,12 +3154,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cpro-js/ui5-react-build@*, @cpro-js/ui5-react-build@workspace:packages/ui5-react-build":
+"@cpro-js/ui5-react-build@^0.3.0, @cpro-js/ui5-react-build@workspace:packages/ui5-react-build":
   version: 0.0.0-use.local
   resolution: "@cpro-js/ui5-react-build@workspace:packages/ui5-react-build"
   dependencies:
-    "@cpro-js/craco-plugin-ui5": ^0.2.0
-    "@cpro-js/craco-plugin-ui5-webcomponents": ^0.1.0
+    "@cpro-js/craco-plugin-ui5": ^0.3.0
+    "@cpro-js/craco-plugin-ui5-webcomponents": ^0.2.0
     "@craco/craco": ^6.4.3
     "@types/craco__craco": ^6.4.0
     "@types/jest": ^26.0.24
