@@ -1,4 +1,7 @@
 {
+  "general": {
+    "showDetails": "Show Details"
+  },
   "test_one": "Test Message",
   "test_other": "Test Messages",
   "customer": {
