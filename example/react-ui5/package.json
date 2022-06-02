@@ -5,7 +5,7 @@
   "scripts": {
     "build": "urb build",
     "start": "urb start",
-    "test": "urb test"
+    "test": "urb test --passWithNoTests"
   },
   "dependencies": {
     "react": "^18.1.0",
