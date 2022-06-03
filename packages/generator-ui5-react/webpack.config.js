@@ -1,16 +1,6 @@
-const fs = require("fs");
-
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
-const nodeModules = {};
-fs.readdirSync("node_modules")
-  .filter(function (x) {
-    return [".bin"].indexOf(x) === -1;
-  })
-  .forEach(function (mod) {
-    nodeModules[mod] = "commonjs " + mod;
-  });
+const nodeExternals = require("webpack-node-externals");
 
 const config = [
   {
@@ -22,7 +12,10 @@ const config = [
       filename: "[name]/index.js",
       libraryTarget: "commonjs-module",
     },
-    externals: nodeModules,
+    externalsPresets: { node: true }, // in order to ignore built-in modules like path, fs, etc.
+    externals: [
+      nodeExternals({ additionalModuleDirs: ["../../node_modules"] }),
+    ], // in order to ignore all modules in node_modules folder
     devtool: "source-map",
     mode: "production",
     resolve: {
