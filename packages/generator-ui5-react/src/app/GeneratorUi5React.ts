@@ -21,7 +21,11 @@ export class Ui5ReactGenerator extends Generator {
   }
 
   public initializing() {
-    this.log(yosay(`Welcome to the ${chalk("UI5 React App generator")} (${pkg.version})`));
+    this.log(
+      yosay(
+        `Welcome to the ${chalk("UI5 React App generator")} (${pkg.version})`
+      )
+    );
   }
 
   public async prompting() {
@@ -53,7 +57,8 @@ export class Ui5ReactGenerator extends Generator {
         type: "input",
         name: "appIcon",
         default: "decision",
-        message: 'App icon name without the "sap://" prefix (used for launchpad tile):',
+        message:
+          'App icon name without the "sap://" prefix (used for launchpad tile):',
       },
       {
         type: "input",
@@ -64,12 +69,14 @@ export class Ui5ReactGenerator extends Generator {
       {
         type: "input",
         name: "semanticObject",
-        message: 'Semantic object name, e.g. "MyApp" (needed for launchpad & cross navigation):',
+        message:
+          'Semantic object name, e.g. "MyApp" (needed for launchpad & cross navigation):',
       },
       {
         type: "input",
         name: "actionName",
-        message: 'Action name, e.g. "maintain" (needed for launchpad & cross navigation):',
+        message:
+          'Action name, e.g. "maintain" (needed for launchpad & cross navigation):',
       },
     ]);
 
@@ -80,6 +87,7 @@ export class Ui5ReactGenerator extends Generator {
     this.options.appIcon = answers.appIcon;
     this.options.semanticObject = answers.semanticObject;
     this.options.actionName = answers.actionName;
+    this.options.defaultLocale = answers.defaultLocale;
   }
 
   public writing() {
@@ -89,6 +97,7 @@ export class Ui5ReactGenerator extends Generator {
       ".gitignore",
       ".prettierignore",
       ".prettierrc",
+      "odata2ts.config.js",
       "README.md",
       "tsconfig.json",
       "src/index.tsx",
@@ -99,25 +108,34 @@ export class Ui5ReactGenerator extends Generator {
       "src/domain/App.tsx",
       "src/domain/AppRouter.tsx",
       "src/domain/demo/TestScreen.tsx",
-      "asset/locale/de.i18n.json",
-      "asset/locale/en.i18n.json",
+      "src/asset/locale/de.i18n.json",
+      "src/asset/locale/en.i18n.json",
+      "src/asset/odata/trippin.xml",
       "public/robots.txt",
     ];
 
     const templateFiles = [
       "craco.config.ts",
       "package.json",
+      ".ui5deployrc",
       "src/appConfig.ts",
       "src/config/i18n.config.ts",
       "public/index.html",
     ];
 
-    staticFiles.forEach(staticFile => {
-      this.fs.copy(this.templatePath(staticFile), this.destinationPath(staticFile));
+    staticFiles.forEach((staticFile) => {
+      this.fs.copy(
+        this.templatePath(staticFile),
+        this.destinationPath(staticFile)
+      );
     });
 
-    templateFiles.forEach(templateFile => {
-      this.fs.copyTpl(this.templatePath(templateFile), this.destinationPath(templateFile), this.options);
+    templateFiles.forEach((templateFile) => {
+      this.fs.copyTpl(
+        this.templatePath(templateFile),
+        this.destinationPath(templateFile),
+        this.options
+      );
     });
   }
 
