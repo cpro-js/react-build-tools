@@ -8,7 +8,7 @@ import { App } from "./domain/App";
 const resolveUri = (path: string) => path;
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
-root.render(<App resolveUri={resolveUri} />);
+root.render(<App resolveUri={resolveUri} locale={"en"} />);
 
 // Workaround: Force full page reload when this module is changed
 // Can be removed after https://github.com/facebook/create-react-app/pull/11105 is released

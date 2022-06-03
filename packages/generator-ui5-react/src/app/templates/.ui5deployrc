@@ -1,0 +1,11 @@
+{
+  "cwd": "./build",
+  "server": "TODO",
+  "client": "TODO",
+  "language": "de",
+  "useStrictSSL": false,
+  "package": "TODO",
+  "transportNo": "TODO",
+  "bspContainer": "TODO",
+  "bspContainerText": "<%= appTitle %>"
+}
