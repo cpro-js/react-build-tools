@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "analyze": "craco build && source-map-explorer 'build/static/js/*.js'",
-    "build": "craco build",
+    "analyze": "npm run build && source-map-explorer 'build/static/js/*.js'",
+    "build": "npm run gen-odata && urb build",
     "deploy": "ui5-deployer deploy",
-    "start": "craco start",
-    "test": "craco test"
+    "gen-odata": "odata2model -s src/asset/odata/trippin.xml -o src/odata/trippin",
+    "start": "urb start",
+    "test": "urb test"
   },
   "dependencies": {
     "@cpro-js/history-ui5": "^4.0.0",
