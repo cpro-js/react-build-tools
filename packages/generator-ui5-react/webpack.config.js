@@ -12,7 +12,7 @@ const config = [
       filename: "[name]/index.js",
       libraryTarget: "commonjs-module",
     },
-    externalsPresets: { node: true }, // in order to ignore built-in modules like path, fs, etc.
+    // externalsPresets: { node: true }, // in order to ignore built-in modules like path, fs, etc.
     externals: [
       nodeExternals({ additionalModuleDirs: ["../../node_modules"] }),
     ], // in order to ignore all modules in node_modules folder
