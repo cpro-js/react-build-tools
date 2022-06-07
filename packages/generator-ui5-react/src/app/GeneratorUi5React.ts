@@ -50,7 +50,7 @@ export class Ui5ReactGenerator extends Generator {
       {
         type: "input",
         name: "defaultLocale",
-        default: "en-US",
+        default: "en",
         message: "Default locale to use for translations and i18n settings:",
       },
       {
@@ -69,12 +69,14 @@ export class Ui5ReactGenerator extends Generator {
       {
         type: "input",
         name: "semanticObject",
+        default: this.appname,
         message:
           'Semantic object name, e.g. "MyApp" (needed for launchpad & cross navigation):',
       },
       {
         type: "input",
         name: "actionName",
+        default: "display",
         message:
           'Action name, e.g. "maintain" (needed for launchpad & cross navigation):',
       },

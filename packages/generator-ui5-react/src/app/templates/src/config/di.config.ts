@@ -1,4 +1,4 @@
-import { Container, I18nService, createI18nModuleRegistry } from "@cpro-js/react-core";
+import { Container, createI18nModuleRegistry } from "@cpro-js/react-core";
 import { createNotificationRegistry } from "@cpro-js/react-ui5-notification";
 
 import { createI18nConfig } from "./i18n.config";
@@ -10,7 +10,7 @@ import { createI18nConfig } from "./i18n.config";
  * @param options
  */
 export const createContainer = async (options: {
-  locale: string;
+  locale?: string;
   resolveUri: (path: string) => string;
 }): Promise<Container> => {
   // the Dependency Injection container

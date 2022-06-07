@@ -29,7 +29,7 @@ export class App extends Component<AppProps> {
 
   constructor(props: AppProps) {
     super(props);
-    const { resolveUri } = this.props;
+    const { resolveUri, locale } = this.props;
     this.container = fromPromise(createContainer({ resolveUri, locale }));
   }
 
@@ -43,12 +43,12 @@ export class App extends Component<AppProps> {
         </ThemeProvider>
       ),
       fulfilled: (container: Container) => {
-        const { getLocale } = container.get(I18nService);
+        const { getFormattingLocale } = container.get(I18nService);
 
         return (
           <ThemeProvider>
             <ContainerProvider container={container}>
-              <NumberContextProvider locale={getLocale()}>
+              <NumberContextProvider locale={getFormattingLocale()}>
                 <AppRouter />
                 <NotificationRenderer />
               </NumberContextProvider>
