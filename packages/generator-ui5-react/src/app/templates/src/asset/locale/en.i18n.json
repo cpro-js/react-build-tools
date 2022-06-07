@@ -1,0 +1,12 @@
+{
+  "general": {
+    "showDetails": "Show Details"
+  },
+  "test": {
+    "interpolation": "Static, translated text with interpolations for a string {{testName}} and a number {{testSize}}",
+    "pluralization_zero": "Zero Test Messages!",
+    "pluralization_one": "One Test Message",
+    "pluralization_other": "{{count}} Test Messages",
+    "cascadingLocalization": "Hello"
+  }
+}

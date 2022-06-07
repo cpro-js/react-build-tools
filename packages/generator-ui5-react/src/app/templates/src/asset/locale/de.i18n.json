@@ -1,0 +1,11 @@
+{
+  "general": {
+    "showDetails": "Zeige Details"
+  },
+  "test": {
+    "interpolation": "Statischer, übersetzter Text mit Platzhaltern\nfür eine Zeichenkette {{testName}} und eine Zahl {{testSize}}",
+    "pluralization_one": "Eine Test Nachricht",
+    "pluralization_other": "{{count}} Test Nachrichten",
+    "cascadingLocalization": "Test: en-GB enthält einen anderen Text als en-US."
+  }
+}
