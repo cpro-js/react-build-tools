@@ -1,13 +1,13 @@
 {
   "name": "@cpro-js/ui5-react-build",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
   "main": "dist/index.js",
   "bin": {
-    "ui5-react": "./dist/run-craco.js"
+    "urb": "./dist/run-craco.js"
   },
   "scripts": {
     "build": "tsup-node --format cjs",
@@ -18,12 +18,13 @@
     "dist"
   ],
   "dependencies": {
-    "@cpro-js/craco-plugin-ui5": "^0.2.0",
-    "@cpro-js/craco-plugin-ui5-webcomponents": "^0.1.0",
+    "@cpro-js/craco-plugin-ui5": "^0.3.0",
+    "@cpro-js/craco-plugin-ui5-webcomponents": "^0.2.0",
     "@craco/craco": "^6.4.3",
-    "@types/jest": "^27.5.1",
+    "@types/jest": "^26.0.24",
     "@types/node": "^17.0.35",
     "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "jest-watch-typeahead": "0.6.1",
     "react-scripts": "^4.0.3",
     "source-map-explorer": "^2.5.2",
     "ui5-nwabap-deployer-cli": "^2.2.0",

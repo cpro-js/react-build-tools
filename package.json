@@ -33,7 +33,7 @@
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"
   },
-  "packageManager": "yarn@3.0.1",
+  "packageManager": "yarn@3.2.1",
   "workspaces": [
     "packages/*",
     "example/*"

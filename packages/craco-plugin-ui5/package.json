@@ -1,6 +1,6 @@
 {
   "name": "@cpro-js/craco-plugin-ui5",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publishConfig": {
     "access": "public"
   },
@@ -30,12 +30,12 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.2.0",
-    "@types/jest": "^27.0.1",
+    "@types/jest": "^26.0.24",
     "@types/lodash": "4.14.172",
     "@types/webpack": "4.41.30",
-    "jest": "^27.1.0",
+    "jest": "^26.6.0",
     "react-scripts": "^4.0.3",
-    "ts-jest": "^27.0.5",
+    "ts-jest": "^26.5.6",
     "tsup": "4.12.5",
     "typescript": "4.1.3"
   },
