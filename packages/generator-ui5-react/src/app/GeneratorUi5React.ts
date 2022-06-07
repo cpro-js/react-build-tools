@@ -112,6 +112,7 @@ export class Ui5ReactGenerator extends Generator {
       "src/domain/demo/TestScreen.tsx",
       "src/asset/locale/de.i18n.json",
       "src/asset/locale/en.i18n.json",
+      "src/asset/locale/en-GB.i18n.json",
       "src/asset/odata/trippin.xml",
       "public/robots.txt",
     ];

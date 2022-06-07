@@ -43,7 +43,7 @@ registerCustomApp(options => {
     }
   }
 
-  const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+  const root = ReactDOM.createRoot(rootNode);
   root.render(<App resolveUri={resolveUri} locale={context.locale} />);
 
   // initialized via launchpad, i.e. via UI5

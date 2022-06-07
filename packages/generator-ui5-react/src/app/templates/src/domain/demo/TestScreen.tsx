@@ -76,7 +76,7 @@ export const TestScreen: FC = observer(() => {
         <br />
         <Label showColon>CurrencyInput</Label>
         <br />
-        <CurrencyInput value={123456.789123} />
+        <CurrencyInput value={123456.789123} currency={"EUR"} />
         <br />
         <br />
 
