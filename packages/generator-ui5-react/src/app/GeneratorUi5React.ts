@@ -96,7 +96,6 @@ export class Ui5ReactGenerator extends Generator {
     const staticFiles = [
       ".editorconfig",
       ".eslintrc.js",
-      ".gitignore",
       ".prettierignore",
       ".prettierrc",
       "odata2ts.config.js",
@@ -125,6 +124,12 @@ export class Ui5ReactGenerator extends Generator {
       "src/config/i18n.config.ts",
       "public/index.html",
     ];
+
+    // .gitignore needs special treatment
+    this.fs.copy(
+      this.templatePath("gitignore"),
+      this.destinationPath(".gitignore")
+    );
 
     staticFiles.forEach((staticFile) => {
       this.fs.copy(
