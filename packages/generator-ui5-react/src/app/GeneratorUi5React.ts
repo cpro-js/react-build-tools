@@ -119,6 +119,10 @@ export class Ui5ReactGenerator extends Generator {
     this.options.semanticObject = answers.semanticObject;
     this.options.actionName = answers.actionName;
     this.options.defaultLocale = answers.defaultLocale;
+    this.options.serverUrl = answers.serverUrl;
+    this.options.odataBasePath = answers.odataBasePath;
+    this.options.sapClientForDeployment = answers.sapClientForDeployment;
+    this.options.sapClientForDev = answers.sapClientForDev;
   }
 
   public writing() {
