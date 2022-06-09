@@ -6,7 +6,7 @@
     "analyze": "npm run build && source-map-explorer 'build/static/js/*.js'",
     "build": "npm run gen-odata && urb build",
     "deploy": "ui5-deployer deploy",
-    "gen-odata": "odata2model -s src/asset/odata/trippin.xml -o src/odata/trippin",
+    "gen-odata": "odata2model -s src/asset/odata/odata-service.xml -o src/odata/odata-service",
     "start": "urb start",
     "test": "urb test"
   },
