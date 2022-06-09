@@ -31,7 +31,6 @@ lerna-debug.log
 # !.yarn/cache
 
 # Env files
-.env
 .env.local
 .env.*.local
 
