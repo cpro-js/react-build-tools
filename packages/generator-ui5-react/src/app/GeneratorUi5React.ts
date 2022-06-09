@@ -131,6 +131,7 @@ export class Ui5ReactGenerator extends Generator {
       ".eslintrc.js",
       ".prettierignore",
       ".prettierrc",
+      "craco.config.ts",
       "odata2ts.config.js",
       "README.md",
       "tsconfig.json",
@@ -153,8 +154,8 @@ export class Ui5ReactGenerator extends Generator {
     const templateFiles = [
       ".env",
       ".ui5deployrc",
-      "craco.config.ts",
       "package.json",
+      "ui5.config.ts",
       "src/appConfig.ts",
       "src/config/i18n.config.ts",
       "public/index.html",
