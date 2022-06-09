@@ -13,6 +13,10 @@ interface Answers {
   defaultLocale: string;
   semanticObject: string;
   actionName: string;
+  serverUrl: string;
+  odataBasePath: string;
+  sapClientForDev: number;
+  sapClientForDeployment: number;
 }
 
 export class Ui5ReactGenerator extends Generator {
@@ -80,6 +84,31 @@ export class Ui5ReactGenerator extends Generator {
         message:
           'Action name, e.g. "maintain" (needed for launchpad & cross navigation):',
       },
+      {
+        type: "input",
+        name: "serverUrl",
+        default: "",
+        message: "Server URL, e.g. https://MY_HOST:MYPORT:",
+      },
+      {
+        type: "input",
+        name: "odataBasePath",
+        default: "/sap/opu/odata/sap",
+        message:
+          "Base path to the OData service (without host and without the service name itself):",
+      },
+      {
+        type: "input",
+        name: "sapClientForDeployment",
+        default: "100",
+        message: "Sap client to use for deployment:",
+      },
+      {
+        type: "input",
+        name: "sapClientForDev",
+        default: "display",
+        message: "Sap client to use for development (OData consumption):",
+      },
     ]);
 
     this.options.packageName = answers.appName;
@@ -90,6 +119,10 @@ export class Ui5ReactGenerator extends Generator {
     this.options.semanticObject = answers.semanticObject;
     this.options.actionName = answers.actionName;
     this.options.defaultLocale = answers.defaultLocale;
+    this.options.serverUrl = answers.serverUrl;
+    this.options.odataBasePath = answers.odataBasePath;
+    this.options.sapClientForDeployment = answers.sapClientForDeployment;
+    this.options.sapClientForDev = answers.sapClientForDev;
   }
 
   public writing() {
@@ -104,6 +137,7 @@ export class Ui5ReactGenerator extends Generator {
       "src/index.tsx",
       "src/index.ui5.tsx",
       "src/react-app-env.d.ts",
+      "src/setupProxy.js",
       "src/config/di.config.ts",
       "src/config/odata.config.ts",
       "src/domain/App.tsx",
@@ -117,9 +151,10 @@ export class Ui5ReactGenerator extends Generator {
     ];
 
     const templateFiles = [
+      ".env",
+      ".ui5deployrc",
       "craco.config.ts",
       "package.json",
-      ".ui5deployrc",
       "src/appConfig.ts",
       "src/config/i18n.config.ts",
       "public/index.html",

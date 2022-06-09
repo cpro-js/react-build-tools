@@ -4,6 +4,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 It also uses [Craco (CRA Configuration Override)](https://github.com/gsoft-inc/craco) to further customize the build,
 especially for UI5 integration.
 
+## Development
+
+### Proxy Config
+
+Default proxy configuration for local development is configured in `.env`. You can override these settings in your own `.env.local`.
+
+Create file `.env.local` in the root with the following config to setup username and password:
+
+```
+# override proxy settings if necessary
+#REACT_APP_PROXY_URL=https://IP_AS_EXAMPLE:PORT/sap/opu/odata/
+#REACT_APP_PROXY_SAP_CLIENT=300
+#REACT_APP_PROXY_LOG_LEVEL=debug
+
+# proxy credentials
+REACT_APP_PROXY_SAP_USERNAME=YOUR_USER
+REACT_APP_PROXY_SAP_PASSWORD=YOUR_PASSWORD
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
