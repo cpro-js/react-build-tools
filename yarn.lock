@@ -3122,7 +3122,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@cpro-js/example-react-ui5@workspace:example/react-ui5"
   dependencies:
-    "@cpro-js/ui5-react-build": ^0.3.0
+    "@cpro-js/ui5-react-build": ^0.4.0
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
@@ -3154,7 +3154,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cpro-js/ui5-react-build@^0.3.0, @cpro-js/ui5-react-build@workspace:packages/ui5-react-build":
+"@cpro-js/ui5-react-build@^0.4.0, @cpro-js/ui5-react-build@workspace:packages/ui5-react-build":
   version: 0.0.0-use.local
   resolution: "@cpro-js/ui5-react-build@workspace:packages/ui5-react-build"
   dependencies:

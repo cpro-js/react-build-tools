@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/cpro-js/react-build-tools/compare/@cpro-js/ui5-react-build@0.3.0...@cpro-js/ui5-react-build@0.4.0) (2022-06-09)
+
+### Features
+
+- proxy support ([#16](https://github.com/cpro-js/react-build-tools/issues/16)) ([501a676](https://github.com/cpro-js/react-build-tools/commit/501a6761ec615318026f5972d8b170e4dad0a4d9))
+
 # [0.3.0](https://github.com/cpro-js/react-build-tools/compare/@cpro-js/ui5-react-build@0.2.0...@cpro-js/ui5-react-build@0.3.0) (2022-06-02)
 
 ### Bug Fixes
