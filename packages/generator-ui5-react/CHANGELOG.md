@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/cpro-js/react-build-tools/compare/generator-ui5-react@0.3.0...generator-ui5-react@0.3.1) (2022-06-12)
+
+### Bug Fixes
+
+- **generator-ui5-react:** wrong import ([1331dce](https://github.com/cpro-js/react-build-tools/commit/1331dce09dca4d3c5f040b1bd79cdda6c4f24b31))
+- **generator-ui5-react:** wrong template variable & misleading default value ([4964ddb](https://github.com/cpro-js/react-build-tools/commit/4964ddb26e2faae55b3a78bb54695a33771a0599))
+
 # [0.3.0](https://github.com/cpro-js/react-build-tools/compare/generator-ui5-react@0.2.1...generator-ui5-react@0.3.0) (2022-06-09)
 
 ### Features
