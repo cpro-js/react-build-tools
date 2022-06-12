@@ -106,7 +106,7 @@ export class Ui5ReactGenerator extends Generator {
       {
         type: "input",
         name: "sapClientForDev",
-        default: "display",
+        default: "200",
         message: "Sap client to use for development (OData consumption):",
       },
     ]);
@@ -147,7 +147,7 @@ export class Ui5ReactGenerator extends Generator {
       "src/asset/locale/de.i18n.json",
       "src/asset/locale/en.i18n.json",
       "src/asset/locale/en-GB.i18n.json",
-      "src/asset/odata/trippin.xml",
+      "src/asset/odata/odata-service.xml",
       "public/robots.txt",
     ];
 

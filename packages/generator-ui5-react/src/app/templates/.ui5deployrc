@@ -2,7 +2,7 @@
   "cwd": "./build",
   "server": "<%= serverUrl %>",
   "client": "<%= sapClientForDeployment %>",
-  "language": "<%= fallbackLocale %>",
+  "language": "<%= defaultLocale %>",
   "useStrictSSL": false,
   "package": "TODO",
   "transportNo": "TODO",
