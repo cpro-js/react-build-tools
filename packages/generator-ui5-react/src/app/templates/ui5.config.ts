@@ -1,4 +1,4 @@
-import { CracoUi5PluginOptions } from "@cpro-js/craco-plugin-ui5/src/craco-ui5-plugin";
+import { CracoUi5PluginOptions } from "@cpro-js/craco-plugin-ui5";
 
 const config: CracoUi5PluginOptions = {
   appId: "Z_YOUR_APP_ID",
