@@ -29,7 +29,7 @@
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
-    "@cpro-js/ui5-react-build": "^0.3.0",
+    "@cpro-js/ui5-react-build": "*",
     "@odata2ts/odata2model": "^0.9.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
