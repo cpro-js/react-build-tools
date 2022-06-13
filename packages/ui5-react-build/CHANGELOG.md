@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/cpro-js/react-build-tools/compare/@cpro-js/ui5-react-build@0.4.0...@cpro-js/ui5-react-build@0.4.1) (2022-06-13)
+
+### Bug Fixes
+
+- **ui5-react-build:** use react-error-overlay@6.0.9 to prevent errors about "process not found" ([45d613a](https://github.com/cpro-js/react-build-tools/commit/45d613ad10cdb5964104586470b82e26b966ff79))
+
 # [0.4.0](https://github.com/cpro-js/react-build-tools/compare/@cpro-js/ui5-react-build@0.3.0...@cpro-js/ui5-react-build@0.4.0) (2022-06-09)
 
 ### Features
