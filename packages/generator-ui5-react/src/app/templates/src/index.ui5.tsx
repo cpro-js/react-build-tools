@@ -4,11 +4,8 @@ import { registerCustomApp } from "@cpro-js/craco-plugin-ui5/runtime";
 // @ts-ignore: no typings available
 import { setAnimationMode as setWebcomponentsAnimationMode } from "@ui5/webcomponents-base/dist/config/AnimationMode";
 // @ts-ignore: no typings available
-import { setLanguage } from "@ui5/webcomponents-base/dist/config/Language";
-// @ts-ignore: no typings available
 import { setTheme as setWebcomponentsTheme } from "@ui5/webcomponents-base/dist/config/Theme";
 import React from "react";
-import { unmountComponentAtNode } from "react-dom";
 import ReactDOM from "react-dom/client";
 
 import { apps, getIntent } from "./appConfig";
@@ -21,11 +18,6 @@ registerCustomApp(options => {
   setWebcomponentsTheme(context.theme);
   subscribeToThemeChanges(theme => {
     setWebcomponentsTheme(theme);
-  });
-
-  setLanguage(context.locale);
-  subscribeToLocaleChanges(locale => {
-    setLanguage(locale);
   });
 
   if (launchpad) {
@@ -49,7 +41,7 @@ registerCustomApp(options => {
   // initialized via launchpad, i.e. via UI5
   // => clean up
   return () => {
-    unmountComponentAtNode(rootNode);
+    root.unmount();
   };
 });
 
