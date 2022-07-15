@@ -2,7 +2,7 @@ import { AxiosRequestConfig } from "axios";
 import qs from "query-string";
 
 export const odataConfig: AxiosRequestConfig = {
-  baseURL: "./api",
+  baseURL: "/sap/opu",
   timeout: 20000,
   paramsSerializer: params => qs.stringify(params, { arrayFormat: "none" }),
   headers: {

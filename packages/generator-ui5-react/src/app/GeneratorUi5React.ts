@@ -128,6 +128,7 @@ export class Ui5ReactGenerator extends Generator {
   public writing() {
     const staticFiles = [
       ".editorconfig",
+      ".env.local",
       ".eslintrc.js",
       ".prettierignore",
       ".prettierrc",
@@ -135,6 +136,7 @@ export class Ui5ReactGenerator extends Generator {
       "odata2ts.config.js",
       "README.md",
       "tsconfig.json",
+      "public/robots.txt",
       "src/index.tsx",
       "src/index.ui5.tsx",
       "src/react-app-env.d.ts",
@@ -148,7 +150,9 @@ export class Ui5ReactGenerator extends Generator {
       "src/asset/locale/en.i18n.json",
       "src/asset/locale/en-GB.i18n.json",
       "src/asset/odata/odata-service.xml",
-      "public/robots.txt",
+      "src/odata/AppODataService.ts",
+      "src/odata/ErrorMessageHandler.ts",
+      "src/style/CssStyles.ts",
     ];
 
     const templateFiles = [
