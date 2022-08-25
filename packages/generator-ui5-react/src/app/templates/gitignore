@@ -1,9 +1,14 @@
+# Generated ODataClient
+src/odata/odata-service
+
 # OSX
 .DS_Store
 
 # IntelliJ
 .idea
 *.iml
+*.private.env.json
+*.log.http
 
 # Emacs
 *~
