@@ -1,3 +1,6 @@
+# Generated ODataClient
+src/odata/odata-service
+
 # OSX
 .DS_Store
 
