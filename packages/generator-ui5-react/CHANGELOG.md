@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/cpro-js/react-build-tools/compare/generator-ui5-react@0.3.2...generator-ui5-react@0.4.0) (2022-08-25)
+
+### Bug Fixes
+
+- **ui5-react-generator:** missing stuff & update of deps ([#19](https://github.com/cpro-js/react-build-tools/issues/19)) ([9840dee](https://github.com/cpro-js/react-build-tools/commit/9840deef7a47b1533541fa3d108c60706fb4ce59))
+
+### Features
+
+- improved odata service integration ([#18](https://github.com/cpro-js/react-build-tools/issues/18)) ([ecc392d](https://github.com/cpro-js/react-build-tools/commit/ecc392d9da2fac07fe32489d737d9a2316f0c496))
+
 ## [0.3.2](https://github.com/cpro-js/react-build-tools/compare/generator-ui5-react@0.3.1...generator-ui5-react@0.3.2) (2022-06-13)
 
 ### Bug Fixes
