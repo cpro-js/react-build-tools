@@ -1,8 +1,12 @@
 import { AxiosRequestConfig } from "axios";
 import qs from "query-string";
 
+export const ODATA_SERVICE_PATHS = {
+  main: "<%= odataServicePath %>",
+};
+
 export const odataConfig: AxiosRequestConfig = {
-  baseURL: "./api",
+  baseURL: "<%= odataBasePath %>",
   timeout: 20000,
   paramsSerializer: params => qs.stringify(params, { arrayFormat: "none" }),
   headers: {
