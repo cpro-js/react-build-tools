@@ -1,4 +1,4 @@
-import { ErrorMessageRetriever } from "@odata2ts/axios-odata-client/lib/AxiosODataClient";
+import { ErrorMessageRetriever } from "@odata2ts/axios-odata-client";
 
 interface SapError {
   error: {
