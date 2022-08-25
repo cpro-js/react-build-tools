@@ -15,6 +15,7 @@ interface Answers {
   actionName: string;
   serverUrl: string;
   odataBasePath: string;
+  odataServicePath: string;
   sapClientForDev: number;
   sapClientForDeployment: number;
 }
@@ -99,6 +100,12 @@ export class Ui5ReactGenerator extends Generator {
       },
       {
         type: "input",
+        name: "odataServicePath",
+        message:
+          "Path to the OData service (without host and without base path, e.g. Z_XYZ_MYSERV):",
+      },
+      {
+        type: "input",
         name: "sapClientForDeployment",
         default: "100",
         message: "Sap client to use for deployment:",
@@ -121,6 +128,7 @@ export class Ui5ReactGenerator extends Generator {
     this.options.defaultLocale = answers.defaultLocale;
     this.options.serverUrl = answers.serverUrl;
     this.options.odataBasePath = answers.odataBasePath;
+    this.options.odataServicePath = answers.odataServicePath;
     this.options.sapClientForDeployment = answers.sapClientForDeployment;
     this.options.sapClientForDev = answers.sapClientForDev;
   }
@@ -142,7 +150,6 @@ export class Ui5ReactGenerator extends Generator {
       "src/react-app-env.d.ts",
       "src/setupProxy.js",
       "src/config/di.config.ts",
-      "src/config/odata.config.ts",
       "src/domain/App.tsx",
       "src/domain/AppRouter.tsx",
       "src/domain/demo/TestScreen.tsx",
@@ -150,8 +157,7 @@ export class Ui5ReactGenerator extends Generator {
       "src/asset/locale/en.i18n.json",
       "src/asset/locale/en-GB.i18n.json",
       "src/asset/odata/odata-service.xml",
-      "src/odata/AppODataService.ts",
-      "src/odata/ErrorMessageHandler.ts",
+      "src/odata/ODataExceptionHandler.ts",
       "src/style/CssStyles.ts",
     ];
 
@@ -162,6 +168,7 @@ export class Ui5ReactGenerator extends Generator {
       "ui5.config.ts",
       "src/appConfig.ts",
       "src/config/i18n.config.ts",
+      "src/config/odata.config.ts",
       "public/index.html",
     ];
 
