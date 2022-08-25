@@ -159,6 +159,7 @@ export class Ui5ReactGenerator extends Generator {
       "src/asset/odata/odata-service.xml",
       "src/odata/ODataExceptionHandler.ts",
       "src/style/CssStyles.ts",
+      "test/main-odata.http",
     ];
 
     const templateFiles = [

@@ -7,6 +7,8 @@ src/odata/odata-service
 # IntelliJ
 .idea
 *.iml
+*.private.env.json
+*.log.http
 
 # Emacs
 *~
