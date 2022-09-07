@@ -13,8 +13,8 @@
   "dependencies": {
     "@cpro-js/history-ui5": "^4.0.0",
     "@cpro-js/react-core": "^0.3.0",
-    "@cpro-js/react-ui5-notification": "^0.1.1",
-    "@cpro-js/react-ui5-webcomponents-form": "^0.27.2",
+    "@cpro-js/react-ui5-notification": "^0.1.2",
+    "@cpro-js/react-ui5-webcomponents-form": "^0.27.3",
     "@odata2ts/axios-odata-client": "^0.2.2",
     "@odata2ts/odata-service": "^0.7.1",
     "@ui5/webcomponents": "^1.5.0",
