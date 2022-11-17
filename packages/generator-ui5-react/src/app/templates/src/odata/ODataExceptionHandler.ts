@@ -33,7 +33,7 @@ export const getErrorMessage: ErrorMessageRetriever = error => {
         data = dataJson;
       } else if (/.*<message>(.*)<\/message>.*/.test(data)) {
         // it's XML, though => regexp parsing of message value
-        return data.replace(/.*<message>(.*)<\/message>.*/, "$1").trim();
+        return data.replace(/.*<message.*>(.*)<\/message>.*/, "$1").trim();
       }
     }
     if (typeof data !== "string") {
