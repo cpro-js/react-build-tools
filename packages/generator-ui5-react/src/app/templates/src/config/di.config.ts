@@ -4,8 +4,7 @@ import { AxiosODataClient } from "@odata2ts/axios-odata-client";
 // @ts-ignore: no typings available
 import { setLanguage } from "@ui5/webcomponents-base/dist/config/Language";
 
-import { MainODataService } from "../odata/odata-service/MainODataService";
-import { getErrorMessage } from "../odata/ODataExceptionHandler";
+import { MainODataService } from "../generated/odata-service/MainODataService";
 import { createI18nConfig } from "./i18n.config";
 import { ODATA_SERVICE_PATHS, createODataConfig } from "./odata.config";
 
@@ -30,7 +29,7 @@ export const createContainer = async (options: {
 
   // initialize ODataService
   const odataConfig = createODataConfig(i18nService.getTranslationLocale(), options.resolveUri);
-  const odataClient = new AxiosODataClient(getErrorMessage, odataConfig);
+  const odataClient = new AxiosODataClient(odataConfig);
   container.bindConstant(MainODataService, new MainODataService(odataClient, ODATA_SERVICE_PATHS.main));
 
   return container;
