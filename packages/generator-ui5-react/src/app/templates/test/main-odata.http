@@ -1,4 +1,11 @@
+# --- CONFIUGARTION FOR VSCode ---
+@rootUrl = https://services.odata.org/TripPinRESTierService
+
 ###
 # @name metadata
 GET {{rootUrl}}/$metadata
-Authorization: {{auth}}
+#Authorization: {{auth}}
+
+###
+# @name list people
+GET {{rootUrl}}/People
