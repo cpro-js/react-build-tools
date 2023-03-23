@@ -6,7 +6,6 @@ export const ODATA_SERVICE_PATHS = {
 };
 
 export const odataConfig: AxiosRequestConfig = {
-  baseURL: "<%= odataBasePath %>",
   timeout: 20000,
   paramsSerializer: params => qs.stringify(params, { arrayFormat: "none" }),
   headers: {

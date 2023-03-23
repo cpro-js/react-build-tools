@@ -14,7 +14,6 @@ interface Answers {
   semanticObject: string;
   actionName: string;
   serverUrl: string;
-  odataBasePath: string;
   odataServicePath: string;
   sapClientForDev: number;
   sapClientForDeployment: number;
@@ -88,21 +87,15 @@ export class Ui5ReactGenerator extends Generator {
       {
         type: "input",
         name: "serverUrl",
-        default: "",
-        message: "Server URL, e.g. https://MY_HOST:MYPORT:",
-      },
-      {
-        type: "input",
-        name: "odataBasePath",
-        default: "/sap/opu/odata/sap",
-        message:
-          "Base path to the OData service (without host and without the service name itself):",
+        default: "https://services.odata.org",
+        message: "Server URL",
       },
       {
         type: "input",
         name: "odataServicePath",
+        default: "/TripPinRESTierService",
         message:
-          "Path to the OData service (without host and without base path, e.g. Z_XYZ_MYSERV):",
+          "Absolute path to the OData service without host and starting with /:",
       },
       {
         type: "input",
@@ -127,7 +120,6 @@ export class Ui5ReactGenerator extends Generator {
     this.options.actionName = answers.actionName;
     this.options.defaultLocale = answers.defaultLocale;
     this.options.serverUrl = answers.serverUrl;
-    this.options.odataBasePath = answers.odataBasePath;
     this.options.odataServicePath = answers.odataServicePath;
     this.options.sapClientForDeployment = answers.sapClientForDeployment;
     this.options.sapClientForDev = answers.sapClientForDev;
@@ -141,7 +133,7 @@ export class Ui5ReactGenerator extends Generator {
       ".prettierignore",
       ".prettierrc",
       "craco.config.ts",
-      "odata2ts.config.js",
+      "odata2ts.config.ts",
       "README.md",
       "tsconfig.json",
       "public/robots.txt",
@@ -157,8 +149,8 @@ export class Ui5ReactGenerator extends Generator {
       "src/asset/locale/en.i18n.json",
       "src/asset/locale/en-GB.i18n.json",
       "src/asset/odata/odata-service.xml",
-      "src/odata/ODataExceptionHandler.ts",
       "src/style/CssStyles.ts",
+      "test/http-client.env.json",
       "test/main-odata.http",
     ];
 
