@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/cpro-js/react-build-tools/compare/generator-ui5-react@0.5.2...generator-ui5-react@0.6.0) (2023-04-11)
+
+### Features
+
+- **generator-ui5-react:** better http script template ([a3f5b4e](https://github.com/cpro-js/react-build-tools/commit/a3f5b4efbf13047a63f831ce9c01ac7b054ec295))
+- **generator-ui5-react:** remove basePath ([64bded0](https://github.com/cpro-js/react-build-tools/commit/64bded0d6dec8858f1170a555d3c0e2e157108b5))
+
 ## [0.5.2](https://github.com/cpro-js/react-build-tools/compare/generator-ui5-react@0.5.1...generator-ui5-react@0.5.2) (2022-11-04)
 
 **Note:** Version bump only for package generator-ui5-react
