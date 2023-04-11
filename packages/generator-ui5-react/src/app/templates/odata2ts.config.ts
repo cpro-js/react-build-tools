@@ -1,8 +1,7 @@
 import { ConfigFileOptions, EmitModes, Modes } from "@odata2ts/odata2ts";
 
 const config: ConfigFileOptions = {
-  mode: Modes.services,
-  debug: false,
+  mode: Modes.service,
   emitMode: EmitModes.ts,
   allowRenaming: true,
   services: {
