@@ -52,16 +52,16 @@ Use the file `.ui5deployrc` to configure your deployment.
 ### OData Services
 
 We generate an OData client out of provided metadata and some configuration
-by using [odata2model](https://www.npmjs.com/package/@odata2ts/odata2model).
+by using [odata2ts](https://odata2ts.github.io/).
 
-Configure the generation in `odata2ts.config.js`.
+Configure the generation in `odata2ts.config.ts`.
 
 As an example, the [Trippin OData V4 example service](https://www.odata.org/odata-services/)
 is integrated by default. To provide your own service download the metadata (BASE_URL/$metadata)
 and overwrite `src/asset/odata/odata-service.xml`.
 
 Then generate a type-safe OData client by `npm run gen-odata`. Files will be generated under
-`src/odata/odata-service`.
+`src/generated/odata-service`.
 
 ## Development: `npm run start`
 

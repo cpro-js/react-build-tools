@@ -3,7 +3,7 @@ import { CracoUi5PluginOptions } from "@cpro-js/craco-plugin-ui5";
 const config: CracoUi5PluginOptions = {
   appId: "Z_YOUR_APP_ID",
   appTitle: "<%= appTitle %>",
-  ui5Version: "1.84.28",
+  ui5Version: "1.108.0",
   sandbox: {
     theme: "sap_fiori_3",
     tiles: [
