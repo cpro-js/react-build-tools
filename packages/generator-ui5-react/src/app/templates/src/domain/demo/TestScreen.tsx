@@ -4,10 +4,17 @@ import { FC, useCallback } from "react";
 import { useHistory } from "react-router";
 
 import { MainLayout } from "../layout/MainLayout";
+import { useTestScreenStyles } from "./TestScreen.style";
 
 export const TestScreen: FC = observer(() => {
+  // hook for routing => react-router
   const history = useHistory();
+  // CSS integration example
+  const style = useTestScreenStyles();
+
+  // event handler
   const goToI18n = useCallback(() => {
+    // navigation to different page => see AppRouter
     history.push("i18n");
   }, []);
 
