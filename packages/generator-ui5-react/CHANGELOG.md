@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/cpro-js/react-build-tools/compare/generator-ui5-react@0.6.0...generator-ui5-react@0.7.0) (2023-06-14)
+
+### Bug Fixes
+
+- current UI5 LTS version, update README ([45ed8bd](https://github.com/cpro-js/react-build-tools/commit/45ed8bd69d9a13d0cce1b6b1b70ebd0ee376ceaf))
+- **generator-ui5-react:** default proxy path ([4d8685c](https://github.com/cpro-js/react-build-tools/commit/4d8685c77e121957b68e8fbc116ecf54bce1cf54))
+
+### Features
+
+- **generator-ui5-react:** new TestPage with linking ([9d11e98](https://github.com/cpro-js/react-build-tools/commit/9d11e98dc6fbe9b58af21a0661929bb496d1a5b8))
+- **generator-ui5-react:** run odata2ts generation automatically ([84e8acf](https://github.com/cpro-js/react-build-tools/commit/84e8acf63e4b064eb6579d2dea3bc973674db5ef))
+
 # [0.6.0](https://github.com/cpro-js/react-build-tools/compare/generator-ui5-react@0.5.2...generator-ui5-react@0.6.0) (2023-04-11)
 
 ### Features
