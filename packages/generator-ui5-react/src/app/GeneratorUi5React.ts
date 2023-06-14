@@ -188,6 +188,8 @@ export class Ui5ReactGenerator extends Generator {
   }
 
   public end() {
+    this.spawnCommandSync("npm", ["run", "gen-odata"]);
+
     this.log("");
     this.log("");
     this.log("Thanks for using the generator!");
