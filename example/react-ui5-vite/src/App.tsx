@@ -1,11 +1,15 @@
 import "./App.css";
 
 import viteLogo from "/vite.svg";
-import { useState } from "react";
+import { FC, useState } from "react";
+import { RenderOptions } from "virtual:ui5-register-app";
 
 import reactLogo from "./assets/react.svg";
 
-function App() {
+export interface AppProps {
+  config?: RenderOptions;
+}
+const App: FC<AppProps> = () => {
   const [count, setCount] = useState(0);
 
   return (
@@ -32,6 +36,6 @@ function App() {
       </p>
     </>
   );
-}
+};
 
 export default App;

@@ -1,12 +1,21 @@
 import "./index.css";
 
-import React from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
+import { register } from "virtual:ui5-register-app";
 
 import App from "./App.tsx";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+register((rootNode, options) => {
+  const root = ReactDOM.createRoot(rootNode);
+  root.render(
+    <StrictMode>
+      <App config={options} />
+    </StrictMode>
+  );
+
+  // => clean up
+  return () => {
+    root.unmount();
+  };
+});
