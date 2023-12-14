@@ -7,5 +7,6 @@ import { defineConfig } from "vite";
 export default defineConfig({
   root: resolve(__dirname, "src"),
   publicDir: resolve(__dirname, "public"),
+  envDir: __dirname,
   plugins: [react()],
 });
