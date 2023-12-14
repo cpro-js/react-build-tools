@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 import ui5RegisterAppPlugin from "./plugin/ui5-register-app";
+import manifest from "./ui5/manifest.json";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,5 +14,10 @@ export default defineConfig({
     outDir: resolve(__dirname, "dist"),
   },
   envDir: __dirname,
-  plugins: [react(), ui5RegisterAppPlugin()],
+  plugins: [
+    react(),
+    ui5RegisterAppPlugin({
+      appId: manifest["sap.app"].id,
+    }),
+  ],
 });

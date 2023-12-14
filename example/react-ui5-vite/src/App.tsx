@@ -9,6 +9,7 @@ import reactLogo from "./assets/react.svg";
 export interface AppProps {
   config?: RenderOptions;
 }
+
 const App: FC<AppProps> = () => {
   const [count, setCount] = useState(0);
 
@@ -26,6 +27,15 @@ const App: FC<AppProps> = () => {
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
+        </button>
+
+        <button
+          onClick={async () => {
+            const { test } = await import("./test.ts");
+            alert(test);
+          }}
+        >
+          Load Async Chunk
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
